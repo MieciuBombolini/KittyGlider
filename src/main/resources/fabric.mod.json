@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "kittyglider",
+  "version": "${version}",
+  "name": "KittyGlider",
+  "description": "Kittens go flying, ziiuuuuu",
+  "authors": [
+    "Bebomny",
+    "0oMi_",
+    "Emijnx"
+  ],
+  "contact": {
+    "website": "notfordogsausage.com",
+    "repo": "https://github.com/MieciuBombolini/KittyGlider"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/kittyglider/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.bebomny.kittyglider.client.KittyGliderClient"
+    ],
+    "main": [
+      "dev.bebomny.kittyglider.KittyGlider"
+    ]
+  },
+  "mixins": [
+    "KittyGlider.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
